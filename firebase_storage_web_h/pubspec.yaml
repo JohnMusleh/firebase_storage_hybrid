@@ -1,0 +1,30 @@
+name: firebase_storage_web_h
+description: Web implementation of firebase_storage_hybrid plugin.
+homepage: https://github.com/JohnMusleh/firebase_storage_hybrid
+# NOTE: We strongly prefer non-breaking changes, even at the expense of a
+# less-clean API. See https://flutter.dev/go/platform-interface-breaking-changes
+version: 1.0.0
+
+flutter:
+  plugin:
+    platforms:
+      web:
+        pluginClass: FirebaseStorageWeb
+        fileName: firebase_storage_web_h.dart
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase: ^7.2.0
+  firebase_storage_platform_interface_h:
+    path: ../firebase_storage_platform_interface_h
+
+dev_dependencies:
+  flutter_web_plugins:
+    sdk: flutter
+  meta: ^1.1.7
+  js: ^0.6.1
+
+environment:
+  sdk: ">=2.0.0-dev.28.0 <3.0.0"
+  flutter: ">=1.9.1+hotfix.5 <2.0.0"
